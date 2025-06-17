@@ -7,17 +7,17 @@ IOT_HUB_CONNECTION_STRING = "HostName=IoTHub-tfm-dt.azure-devices.net;DeviceId=t
 
 try:
     client = IoTHubDeviceClient.create_from_connection_string(IOT_HUB_CONNECTION_STRING)
-    print("✅ Cliente IoT conectado correctamente.")
+    print("Cliente IoT conectado correctamente.")
 
     def send_test_message():
         message = '{"status": "test_connection", "temperature": 22.5}'
-        print(f"✅ Enviando mensaje: {message}")
+        print(f"Enviando mensaje: {message}")
         client.send_message(message)
-        print("✅ Mensaje enviado al IoT Hub con éxito.")
+        print("Mensaje enviado al IoT Hub con éxito.")
 
     # Ejecutar prueba
     if __name__ == "__main__":
         send_test_message()
 
 except Exception as e:
-    print(f"❌ Error en la conexión: {str(e)}")
+    print(f"Error en la conexión: {str(e)}")
