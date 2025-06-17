@@ -1,0 +1,7 @@
+{
+  "@id": "dtmi:comDT:Wing;1",
+  "@type": "Interface",
+  "displayName": "Wing",
+  "contents": [],
+  "@context": "dtmi:dtdl:context;2"
+}

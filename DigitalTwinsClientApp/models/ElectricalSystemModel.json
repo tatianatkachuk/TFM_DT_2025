@@ -1,0 +1,7 @@
+{
+  "@id": "dtmi:comDT:ElectricalSystem;1",
+  "@type": "Interface",
+  "displayName": "Electrical System",
+  "contents": [],
+  "@context": "dtmi:dtdl:context;2"
+}

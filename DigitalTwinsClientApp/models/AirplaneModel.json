@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:comDT:Airplane;1",
+  "@type": "Interface",
+  "displayName": "Airplane",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "hasEngine",
+      "target": "dtmi:comDT:Engine;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasWingLeft",
+      "target": "dtmi:comDT:Wing;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasWingRight",
+      "target": "dtmi:comDT:Wing;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasElectricalSystem",
+      "target": "dtmi:comDT:ElectricalSystem;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasHydraulicSystem",
+      "target": "dtmi:comDT:HydraulicSystem;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

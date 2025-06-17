@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:comDT:Engine;1",
+  "@type": "Interface",
+  "displayName": "Engine",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "hasTemperatureSensor",
+      "target": "dtmi:comDT:TemperatureSensor;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasVibrationSensor",
+      "target": "dtmi:comDT:VibrationSensor;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPressureSensor",
+      "target": "dtmi:comDT:PressureSensor;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

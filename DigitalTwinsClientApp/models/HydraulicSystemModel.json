@@ -1,0 +1,7 @@
+{
+  "@id": "dtmi:comDT:HydraulicSystem;1",
+  "@type": "Interface",
+  "displayName": "Hydraulic System",
+  "contents": [],
+  "@context": "dtmi:dtdl:context;2"
+}
