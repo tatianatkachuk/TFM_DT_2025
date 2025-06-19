@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\DeviceSimulator.csproj": {}
+    "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\DeviceSimulator.csproj": {
+    "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\DeviceSimulator.csproj",
+        "projectUniqueName": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj",
         "projectName": "DeviceSimulator",
-        "projectPath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\DeviceSimulator.csproj",
+        "projectPath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj",
         "packagesPath": "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\obj\\",
+        "outputPath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tatiana Tkachuk\\AppData\\Roaming\\NuGet\\NuGet.Config"

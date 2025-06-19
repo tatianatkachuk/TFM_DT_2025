@@ -39,3 +39,44 @@ C:\tech\AZ220Course\digital-twins-samples-master\DeviceSimulator\DeviceSimulator
 C:\tech\AZ220Course\digital-twins-samples-master\DeviceSimulator\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.dll
 C:\tech\AZ220Course\digital-twins-samples-master\DeviceSimulator\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.pdb
 C:\tech\AZ220Course\digital-twins-samples-master\DeviceSimulator\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.genruntimeconfig.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.exe
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.dll.config
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.deps.json
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.runtimeconfig.json
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.runtimeconfig.dev.json
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DeviceSimulator.pdb
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Azure.Messaging.EventHubs.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Buffers.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Codecs.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Codecs.Mqtt.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Common.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Handlers.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\DotNetty.Transport.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Azure.Devices.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Azure.Devices.Client.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Azure.Devices.Shared.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.csproj.AssemblyReference.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.AssemblyInfoInputs.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSi.34167AE2.Up2Date
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.dll
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.pdb
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.genruntimeconfig.cache

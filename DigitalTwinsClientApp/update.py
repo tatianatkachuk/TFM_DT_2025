@@ -18,10 +18,11 @@ twin_id = "tempSensor1"
 patch = [
     {
         "op": "replace",   # operación: reemplazar valor
-        "path": "/temperature",  # propiedad a actualizar
+        "path": "/Temperature",  # propiedad a actualizar
         "value": 25.7     # nuevo valor
     }
 ]
+
 try:
     # Ejecutar la actualización
     client.update_digital_twin(twin_id, patch)

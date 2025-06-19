@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gNioQxD8euk=",
+  "dgSpecHash": "hZyjOiBHzqs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwins\\DeviceSimulator\\DeviceSimulator.csproj",
+  "projectFilePath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\azure.core\\1.14.0\\azure.core.1.14.0.nupkg.sha512",
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\azure.messaging.eventhubs\\5.4.1\\azure.messaging.eventhubs.5.4.1.nupkg.sha512",
