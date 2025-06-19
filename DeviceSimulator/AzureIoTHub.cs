@@ -1,43 +1,73 @@
 using Microsoft.Azure.Devices.Client;
+using System.Collections.Generic;
 using System;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using dotenv.net;
 
-namespace DeviceSimulator
+class Program
 {
-    public static class AzureIoTHub
+    static async Task Main()
     {
-        private const string deviceConnectionString = "HostName=IoTHub-tfm-dt.azure-devices.net;DeviceId=tempSensor1;SharedAccessKey=bJ0UvslvGwUs7VXd20SPM5ySM0W6VPud/9RvmuzA5wQ=";
+        DotEnv.Load(); // Carga el .env
 
-        
-        public static async Task SendDeviceToCloudMessageAsync(CancellationToken cancelToken)
+        var cts = new CancellationTokenSource();
+        Console.WriteLine($"Directorio de ejecución: {Environment.CurrentDirectory}");
+
+        var tempTask = SensorSimulator.RunAsync("TEMP_CONNECTION_STRING", "Temperature", 900.0, -50, 50, "°C", cts.Token);
+        var pressureTask = SensorSimulator.RunAsync("PRESSURE_CONNECTION_STRING", "Pressure", 1500.0, -200, 200, "kPa", cts.Token);
+        var vibrationTask = SensorSimulator.RunAsync("VIBRATION_CONNECTION_STRING", "Vibration", 6.0, -4.0, 6.0, "mm/s RMS", cts.Token);
+
+        Console.WriteLine("Simulando sensores... pulsa una tecla para detener."); 
+        Console.ReadKey();
+        cts.Cancel();
+
+        await Task.WhenAll(tempTask, pressureTask, vibrationTask);
+    }
+}
+
+public static class SensorSimulator
+{
+    public static async Task RunAsync(string envVariable, string propertyName, double avg, double minDelta, double maxDelta, string unit, CancellationToken token)
+    {
+        string connectionString = Environment.GetEnvironmentVariable(envVariable);
+
+        var client = DeviceClient.CreateFromConnectionString(connectionString);
+        var rand = new Random();
+
+        while (!token.IsCancellationRequested)
         {
-            var deviceClient = DeviceClient.CreateFromConnectionString(deviceConnectionString);
-
-            double avgTemperature = 70.0D;
-            var rand = new Random();
-
-            while (!cancelToken.IsCancellationRequested)
+            double value = avg + rand.NextDouble() * (maxDelta - minDelta) + minDelta;
+            
+            object data;
+            switch (propertyName)
             {
-                double currentTemperature = avgTemperature + rand.NextDouble() * 4 - 3;
-
-                var telemetryDataPoint = new
-                {
-                    Temperature = currentTemperature
-                };
-                var messageString = JsonSerializer.Serialize(telemetryDataPoint);
-                var message = new Microsoft.Azure.Devices.Client.Message(Encoding.UTF8.GetBytes(messageString))
-                {
-                    ContentType = "application/json",
-                    ContentEncoding = "utf-8"
-                };
-                await deviceClient.SendEventAsync(message);
-                Console.WriteLine($"{DateTime.Now} > Sending message: {messageString}");
-                
-                await Task.Delay(5000);
+                case "Temperature":
+                    data = new { Temperature = value };
+                    break;
+                case "Pressure":
+                    data = new { Pressure = value };
+                    break;
+                case "Vibration":
+                    data = new { Vibration = value };
+                    break;
+                default:
+                    Console.WriteLine($"Propiedad desconocida: {propertyName}");
+                    return;
             }
-        }             
+             var json = JsonSerializer.Serialize(data);
+            var message = new Message(Encoding.UTF8.GetBytes(json))
+            {
+                ContentType = "application/json",
+                ContentEncoding = "utf-8"
+            };
+           
+            await client.SendEventAsync(message);
+            Console.WriteLine($"[{propertyName}] {DateTime.Now} > {value:F2} {unit}");
+
+            await Task.Delay(5000);
+        }
     }
 }

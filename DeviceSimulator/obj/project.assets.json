@@ -49,6 +49,15 @@
           }
         }
       },
+      "dotenv.net/3.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      },
       "DotNetty.Buffers/0.6.0": {
         "type": "package",
         "dependencies": {
@@ -2286,6 +2295,21 @@
         "lib/netstandard2.0/Azure.Messaging.EventHubs.dll",
         "lib/netstandard2.0/Azure.Messaging.EventHubs.xml",
         "pkgicon.png"
+      ]
+    },
+    "dotenv.net/3.2.1": {
+      "sha512": "2fc2s5PH6wAoWQ8bpyVgz28y9qMs/t8ToiCKqSM6mWpjgg4QQSPtZ0nia0x/OebGLSDbxyOelVH+fULZH7N4mA==",
+      "type": "package",
+      "path": "dotenv.net/3.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotenv.net.3.2.1.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard1.6/dotenv.net.dll",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "DotNetty.Buffers/0.6.0": {
@@ -7177,7 +7201,8 @@
       "Azure.Messaging.EventHubs >= 5.4.1",
       "Microsoft.Azure.Devices >= 1.34.0",
       "Microsoft.Azure.Devices.Client >= 1.37.2",
-      "System.Text.Json >= 5.0.2"
+      "System.Text.Json >= 5.0.2",
+      "dotenv.net >= 3.2.1"
     ]
   },
   "packageFolders": {
@@ -7237,6 +7262,10 @@
           "System.Text.Json": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[3.2.1, )"
           }
         },
         "imports": [

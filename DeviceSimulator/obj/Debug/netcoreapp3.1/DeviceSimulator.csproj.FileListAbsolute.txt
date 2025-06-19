@@ -80,3 +80,5 @@ C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.dll
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.pdb
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.genruntimeconfig.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\obj\Debug\netcoreapp3.1\DeviceSimulator.sourcelink.json
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\DeviceSimulator\bin\Debug\netcoreapp3.1\dotenv.net.dll

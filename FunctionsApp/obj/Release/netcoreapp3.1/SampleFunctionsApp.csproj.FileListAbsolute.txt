@@ -76,6 +76,7 @@ C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.AssemblyInfoInputs.cache
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.AssemblyInfo.cs
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.csproj.CoreCompileInputs.cache
+C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.sourcelink.json
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFu.770D255F.Up2Date
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.dll
 C:\Users\Tatiana Tkachuk\Desktop\_________\TFM\DigitalTwinsCode\FunctionsApp\obj\Release\netcoreapp3.1\SampleFunctionsApp.pdb

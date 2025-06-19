@@ -14,55 +14,68 @@ using System.Threading.Tasks;
 
 namespace SampleFunctionsApp
 {
-    // This class processes telemetry events from IoT Hub, reads temperature of a device
-    // and sets the "Temperature" property of the device with the value of the telemetry.
     public class ProcessHubToDTEvents
     {
         private static readonly HttpClient httpClient = new HttpClient();
         private static string adtServiceUrl = Environment.GetEnvironmentVariable("ADT_SERVICE_URL");
 
         [FunctionName("ProcessHubToDTEvents")]
-        public async Task Run([EventGridTrigger]EventGridEvent eventGridEvent, ILogger log)
-        {  
-            //Authenticate with Digital Twins
+        public async Task Run([EventGridTrigger] EventGridEvent eventGridEvent, ILogger log)
+        {
             var credentials = new DefaultAzureCredential();
-            DigitalTwinsClient client = new DigitalTwinsClient(
-                new Uri(adtServiceUrl), credentials, new DigitalTwinsClientOptions
-                { Transport = new HttpClientTransport(httpClient) });
-            log.LogInformation($"ADT service client connection created.");
+            var client = new DigitalTwinsClient(
+                new Uri(adtServiceUrl),
+                credentials,
+                new DigitalTwinsClientOptions
+                {
+                    Transport = new HttpClientTransport(httpClient)
+                });
 
-            if (eventGridEvent != null && eventGridEvent.Data != null)
+            log.LogInformation("ADT service client connection created.");
+
+            if (eventGridEvent?.Data != null)
             {
-                log.LogInformation(eventGridEvent.Data.ToString());
-
-                // Reading deviceId and temperature for IoT Hub JSON
-                JObject deviceMessage = (JObject)JsonConvert.DeserializeObject(eventGridEvent.Data.ToString());
-                string deviceId = (string)deviceMessage["systemProperties"]["iothub-connection-device-id"];
-                var temperature = deviceMessage["body"]["Temperature"];
-
-                log.LogInformation($"Device:{deviceId} Temperature is:{temperature}");
-
-                //Update twin using device temperature
-                // var updateTwinData = new JsonPatchDocument();
-                // updateTwinData.AppendReplace("/Temperature", temperature.Value<double>());
-                // await client.UpdateDigitalTwinAsync(deviceId, updateTwinData);
-
                 try
+                {
+                    JObject message = JObject.Parse(eventGridEvent.Data.ToString());
+                    string deviceId = (string)message["systemProperties"]?["iothub-connection-device-id"];
+                    JObject body = (JObject)message["body"];
+
+                    if (deviceId == null || body == null)
                     {
-                        var updateTwinData = new JsonPatchDocument();
-                        updateTwinData.AppendReplace("/Temperature", temperature.Value<double>());
-
-                        log.LogInformation($"Updating twin '{deviceId}' with Temperature = {temperature.Value<double>()}");
-
-                        await client.UpdateDigitalTwinAsync(deviceId, updateTwinData);
-
-                        log.LogInformation($"Twin '{deviceId}' updated successfully.");
-                    }
-                    catch (Exception ex)
-                    {
-                        log.LogError($"Failed to update twin '{deviceId}': {ex.Message}");
+                        log.LogWarning("Datos incompletos en el mensaje.");
+                        return;
                     }
 
+                    // Detecta qué propiedad incluye el mensaje (Temperature, Pressure o Vibration)
+                    string propertyName = null;
+                    double propertyValue = 0;
+
+                    foreach (var prop in body)
+                    {
+                        propertyName = prop.Key;
+                        propertyValue = prop.Value.Value<double>();
+                        break; // Solo se espera una propiedad por mensaje
+                    }
+
+                    if (propertyName == null)
+                    {
+                        log.LogWarning("No se encontró ninguna propiedad válida en el cuerpo del mensaje.");
+                        return;
+                    }
+
+                    log.LogInformation($"Device: {deviceId} | {propertyName} = {propertyValue}");
+
+                    var patch = new JsonPatchDocument();
+                    patch.AppendReplace($"/{propertyName}", propertyValue);
+
+                    await client.UpdateDigitalTwinAsync(deviceId, patch);
+                    log.LogInformation($"Twin '{deviceId}' updated with {propertyName} = {propertyValue}");
+                }
+                catch (Exception ex)
+                {
+                    log.LogError($"Error procesando el evento: {ex.Message}");
+                }
             }
         }
     }

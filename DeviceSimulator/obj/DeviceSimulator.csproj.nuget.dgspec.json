@@ -58,6 +58,10 @@
             "System.Text.Json": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.2.1, )"
             }
           },
           "imports": [
