@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h/S3KlO1vP4=",
+  "dgSpecHash": "NIwS95De0ro=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tatiana Tkachuk\\Desktop\\_________\\TFM\\DigitalTwinsCode\\DeviceSimulator\\DeviceSimulator.csproj",
   "expectedPackageFiles": [
@@ -129,10 +129,10 @@
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\windowsazure.storage\\9.3.2\\windowsazure.storage.9.3.2.nupkg.sha512",
-    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512",
     "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Tatiana Tkachuk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }
